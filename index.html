@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Maintainia</title>
+    <title>Maintainia - Maintain What Matters</title>
     <style>
         * {
             margin: 0;
@@ -20,7 +20,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
             background: white;
@@ -39,50 +39,156 @@
 
         .header h1 {
             color: #2c3e50;
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 0.5rem;
             font-weight: 700;
         }
 
+        .header .tagline {
+            color: #667eea;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
         .header p {
             color: #7f8c8d;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        .content {
-            font-size: 1.1rem;
-            line-height: 1.8;
+        .nav-links {
+            text-align: center;
+            margin-bottom: 2rem;
         }
 
-        .content p {
-            margin-bottom: 1.5rem;
+        .nav-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #f8f9fa;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+        }
+
+        .hero-section h2 {
             color: #2c3e50;
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
         }
 
-        .highlight-box {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .highlight-box p {
-            margin-bottom: 0;
+        .hero-section p {
             color: #495057;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
         }
 
-        .contact-info {
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .cta-button:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-card h3::before {
+            content: "🔧";
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .feature-card p {
+            color: #495057;
+            line-height: 1.7;
+        }
+
+        .privacy-section {
             background: #e8f4fd;
             border: 1px solid #bee5eb;
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin: 2rem 0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
         }
 
-        .contact-info p {
-            margin-bottom: 0;
+        .privacy-section h3 {
             color: #0c5460;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .privacy-section p {
+            color: #0c5460;
+            margin-bottom: 1.5rem;
+        }
+
+        .privacy-link {
+            display: inline-block;
+            background: #0c5460;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+
+        .privacy-link:hover {
+            background: #0a4a52;
         }
 
         .footer {
@@ -94,19 +200,14 @@
             font-size: 0.9rem;
         }
 
-        .last-updated {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            border-radius: 8px;
-            padding: 1rem;
-            margin: 2rem 0;
-            text-align: center;
+        .app-store-badge {
+            display: inline-block;
+            margin: 1rem;
+            transition: transform 0.3s;
         }
 
-        .last-updated p {
-            margin-bottom: 0;
-            color: #856404;
-            font-size: 0.9rem;
+        .app-store-badge:hover {
+            transform: scale(1.05);
         }
 
         @media (max-width: 768px) {
@@ -116,11 +217,24 @@
             }
 
             .header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
 
-            .content {
-                font-size: 1rem;
+            .header .tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links a {
+                display: block;
+                margin: 0.5rem 0;
             }
         }
     </style>
@@ -128,42 +242,64 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Privacy Policy</h1>
-            <p>Maintainia - Your Privacy Matters</p>
+            <h1>Maintainia</h1>
+            <div class="tagline">Maintain What Matters</div>
+            <p>Your all-in-one solution for tracking, organizing, and maintaining everything that matters—tools, equipment, vehicles, and more.</p>
         </div>
 
-        <div class="nav-links" style="text-align: center; margin-bottom: 2rem;">
-            <a href="index.html" style="display: inline-block; margin: 0 1rem; color: #667eea; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 6px; transition: background-color 0.3s;">Privacy Policy</a>
-            <a href="support.html" style="display: inline-block; margin: 0 1rem; color: #667eea; text-decoration: none; font-weight: 500; padding: 0.5rem 1rem; border-radius: 6px; transition: background-color 0.3s;">Support</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="support.html">Support</a>
         </div>
 
-        <div class="content">
-            <div class="last-updated">
-                <p><strong>Last Updated:</strong> August 2025</p>
+        <div class="hero-section">
+            <h2>Keep Your Assets in Top Shape</h2>
+            <p>Whether you're a homeowner, DIYer, or manage a fleet, Maintainia keeps you in control with smart insights, automated reminders, and comprehensive tracking.</p>
+            <a href="#" class="cta-button">Download on the App Store</a>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Smart Maintenance Tracking</h3>
+                <p>Log maintenance and repairs with ease. Attach photos, receipts, and detailed notes to keep complete records of all your maintenance activities.</p>
             </div>
 
-            <p>Your privacy is important to us. This app does not collect, store, or share your personal data with third parties. All data you enter is stored locally on your asset and, if you choose, in your personal iCloud account for backup purposes.</p>
-
-            <div class="highlight-box">
-                <p><strong>Data Storage:</strong> All your data remains on your device and in your personal iCloud account. We have no access to your personal information.</p>
+            <div class="feature-card">
+                <h3>Intelligent Reminders</h3>
+                <p>Set automated reminders for upcoming tasks. Never miss an oil change, filter replacement, or scheduled maintenance again.</p>
             </div>
 
-            <p>We do not track your activity, location, or usage outside of the app.</p>
-
-            <div class="contact-info">
-                <p><strong>Questions or Concerns?</strong> If you have any questions or concerns about your privacy, please contact support.</p>
+            <div class="feature-card">
+                <h3>Smart Insights</h3>
+                <p>Get AI-powered insights and analytics on your upkeep habits. Identify patterns and optimize your maintenance schedule.</p>
             </div>
 
-            <div class="highlight-box">
-                <p><strong>Policy Updates:</strong> As our service grows and evolves, so will this privacy policy. Any changes to our privacy practices will be reflected here and made available on this site. We encourage you to review this policy periodically to stay informed about how we protect your privacy.</p>
+            <div class="feature-card">
+                <h3>Organized Asset Management</h3>
+                <p>Organize assets by location, type, or custom categories. Keep track of everything from vehicles to tools to equipment.</p>
             </div>
 
-            <p>We are committed to maintaining the trust and confidence of our users. This privacy policy outlines our practices regarding the collection, use, and protection of your information. By using our application, you agree to the terms outlined in this privacy policy.</p>
+            <div class="feature-card">
+                <h3>Instant Loading</h3>
+                <p>Lightning-fast performance with instant insight loading. No more waiting for data to process - everything loads in under 100ms.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Privacy First</h3>
+                <p>Your data stays on your device and in your personal iCloud account. We don't collect, store, or share your personal information.</p>
+            </div>
+        </div>
+
+        <div class="privacy-section">
+            <h3>Your Privacy Matters</h3>
+            <p>We believe in privacy-first design. All your data is stored locally on your device and, if you choose, in your personal iCloud account for backup purposes. We do not track your activity, location, or usage outside of the app.</p>
+            <a href="privacy.html" class="privacy-link">Read Our Privacy Policy</a>
         </div>
 
         <div class="footer">
             <p>&copy; 2025 Maintainia. All rights reserved.</p>
-            <p>This privacy policy is effective as of the date listed above and will remain in effect except with respect to any changes in its provisions in the future.</p>
+            <p>Maintain What Matters - Your trusted partner in asset maintenance and organization.</p>
         </div>
     </div>
 </body>

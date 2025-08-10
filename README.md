@@ -1,10 +1,14 @@
-# Maintainia Privacy Policy
+# Maintainia - Official Website
 
-This repository hosts the privacy policy for Maintainia applications. The privacy policy is published as a GitHub Pages site.
+This repository hosts the official website for Maintainia, featuring the app landing page, privacy policy, and support information. The site is published as a GitHub Pages site.
+
+## 🏠 Landing Page
+
+The main landing page showcasing Maintainia features is available at: **https://[your-username].github.io/maintainia-public/**
 
 ## 📄 Privacy Policy
 
-The privacy policy is available at: **https://[your-username].github.io/maintainia-public/**
+The privacy policy is available at: **https://[your-username].github.io/maintainia-public/privacy.html**
 
 ## 🆘 Support
 
