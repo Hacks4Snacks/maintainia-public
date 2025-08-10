@@ -27,4 +27,4 @@ If you have any questions about this privacy policy or our privacy practices, pl
 
 ---
 
-*Last updated: December 2024*
+*Last updated: August 2025*
