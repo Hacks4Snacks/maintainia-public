@@ -6,6 +6,10 @@ This repository hosts the privacy policy for Maintainia applications. The privac
 
 The privacy policy is available at: **https://[your-username].github.io/maintainia-public/**
 
+## 🆘 Support
+
+Support information is available at: **https://[your-username].github.io/maintainia-public/support.html**
+
 ## 🔄 Updates
 
 This privacy policy will be updated as our service grows and evolves. All changes will be reflected on this site and made available to users.
