@@ -4,15 +4,15 @@ This repository hosts the official website for Maintainia, featuring the app lan
 
 ## 🏠 Landing Page
 
-The main landing page showcasing Maintainia features is available at: **https://[your-username].github.io/maintainia-public/**
+The main landing page showcasing Maintainia features is available at: **https://app.maintainia.net/maintainia-public/**
 
 ## 📄 Privacy Policy
 
-The privacy policy is available at: **https://[your-username].github.io/maintainia-public/privacy.html**
+The privacy policy is available at: **https://app.maintainia.net/maintainia-public/privacy.html**
 
 ## 🆘 Support
 
-Support information is available at: **https://[your-username].github.io/maintainia-public/support.html**
+Support information is available at: **https://app.maintainia.net/maintainia-public/support.html**
 
 ## 🔄 Updates
 
